@@ -14,7 +14,7 @@ body{
 
 .banner{
     text-align: center;
-    background:#ff2f7c;
+    background:#3c3ad3;
 }
 .banner img{
     display: block;
@@ -58,17 +58,80 @@ body{
     float: right;
 }
 .header-list li{
+   
     float: left;
-    line-height: 40px;
-    padding: 0 15px 0 20px; 
 }
-.header-list li a{
+.header-list>li>a{
     color:#999;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px 0 20px;
+    
 }
 .header-list li a:hover{
     color: #FF0036;
 }
+.icon-icon01,.icon-shouj,.icon-daohang{
+    color: #FF0036;
+    font-size: 14px;
 
+}
+
+
+
+
+.header-list li.list-menu:hover > a{
+    background: #fff;
+    text-decoration: underline;
+
+}
+.arrow{
+    width: 0;
+    height: 0;
+    border: 3px solid transparent;
+    border-top-color: #999;
+    position: absolute;
+    right: 7px;
+    top:20px;
+    transition: transform 0.2s ease;
+}
+.header-list .list-menu:hover .arrow{
+    transform: rotate(180deg);
+    transform-origin: 50% 25%;
+}
+.header-list .list-menu{
+    position: relative;
+}
+.header-list li.list-menu-no:hover > a{
+    color:#999;
+    text-decoration: none;
+
+
+}
+.sub-list{
+    position: absolute;
+    left: 0;
+    top: 40px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-top: none;
+    padding: 10px 8px;
+    width: 74px;
+    line-height: 30px;
+    display: none;
+    
+}
+.sub-list a{
+    color: #999;
+}
+.sub-list a:hover{
+    color: #FF0036;
+    
+}
+.header-list .list-menu:hover .sub-list{
+    display: block;
+}
 
 
 
